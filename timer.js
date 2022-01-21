@@ -8,9 +8,21 @@ function clock(){
  let mm = now.getMinutes();
  let ss = now.getSeconds();
  
- hh = hh < 10? "0" + hh:hh;
- mm = mm < 10? "0" + mm:mm;
- ss = ss < 10? "0" + ss:ss;
+ if(hh < 10){
+  hh = " 0" + hh;
+ }else{
+  hh = hh;
+ }
+ if(mm < 10){
+  mm = " 0" + mm;
+ }else{
+  mm = mm;
+ }
+ if(ss < 10){
+  ss = " 0" + ss;
+ }else{
+  ss = ss;
+ }
  
  let result = document.getElementById("result");
  
